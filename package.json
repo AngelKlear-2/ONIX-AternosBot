@@ -1,0 +1,49 @@
+{
+  "name": "onix",
+  "version": "1.2.0",
+  "description": "Minecraft AFK bot with Telegram control panel",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js",
+    "check": "node scripts/check.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "get-chat-id": "node scripts/get-chat-id.js",
+    "fix-polling": "node scripts/fix-telegram-polling.js",
+    "test-telegram": "node scripts/test-telegram.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "minecraft",
+    "mineflayer",
+    "telegram",
+    "afk",
+    "bot"
+  ],
+  "author": "UrelzOfficial",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UrelzOfficial/onix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UrelzOfficial/onix/issues"
+  },
+  "homepage": "https://github.com/UrelzOfficial/onix#readme",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "mineflayer": "^4.37.1",
+    "mineflayer-pathfinder": "^2.4.5",
+    "node-telegram-bot-api": "^0.65.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^9.1.2",
+    "prettier": "^3.8.3"
+  }
+}
